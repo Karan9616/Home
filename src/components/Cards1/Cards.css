@@ -1,0 +1,29 @@
+/* Your existing CSS rules */
+.card-container {
+    margin-top: 30px;
+}
+
+.card-container h1 {
+    font-family: 'Almendra', sans-serif;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+}
+
+.custom-card {
+    width: 250px;
+    height: 300px;
+    margin-bottom: 20px;
+
+}
+
+.slick-slide > div{
+    margin:0 10px;
+}
