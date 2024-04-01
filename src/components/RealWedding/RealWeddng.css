@@ -1,9 +1,9 @@
 /* Your existing CSS rules */
-.card-container {
+.cards-container {
     margin-top: 30px;
 }
 
-.card-container h1 {
+.cards-container h1 {
     font-family: 'Almendra', sans-serif;
     margin-bottom: 20px;
     font-size: 28px;
@@ -14,15 +14,16 @@
 
 
 
-.custom-card {
-    width: 250px;
-    height: 300px;
+.customs-card {
+    width: 300px;
+    height: 280px;
     margin-bottom: 20px;
 
 }
 
 
-.custom-card {
+.customs-card {
     margin: 0 10px; /* Add horizontal margin between cards */
 }
+
 
