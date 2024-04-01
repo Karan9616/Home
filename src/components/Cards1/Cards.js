@@ -34,36 +34,39 @@ function Cards() {
 
     const data = [
         {
-            img: `/assests/1.jpeg`,
-            text: "Bridal Wear"
+            img: `/assests/22.jpg`,
+            text: `Bridal Wear`
         },
         {
-            img: "/assests/2.jpg",
+            img: "/assests/15.png",
             text: "Makeup"
         },
         {
-            img: `/assests/3.jpg`,
+            img: `/assests/19.jpg`,
             text: "Invitations"
         },
         {
-            img: `/assests/4.jpg`,
+            img: `/assests/18.jpg`,
             text: "Catering"
         },
         {
-            img: `/assests/5.jpg`,
+            img: `/assests/20.jpg`,
             text: "Groom Wear"
         },
         {
-            img: `/assests/7.jpg`,
+            img: `/assests/21.jpg`,
             text: "Decorators"
-        },
+        }
+      
+       
+    
 
     ]
     return (
 
         <div className='card-container'>
             <h1>Popular Searches</h1>
-          
+            
                 <Carousel responsive={responsive}>
                     {data.map((item) => (
                         <div key={item.img}>
@@ -75,19 +78,13 @@ function Cards() {
                                     image={item.img}
                                 />
                             </Card>
-                            <h1 >{item.text}</h1>
+                            <h2 className='item-text'>{item.text}</h2>
                         </div>
                     ))}
 
                 </Carousel>
 
-            
-
-
-
-
-
-        </div>
+            </div>
 
 
 

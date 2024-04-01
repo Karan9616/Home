@@ -75,7 +75,7 @@ function RealWedding() {
                             image={item.img}
                         />
                     </Card>
-                    <h1>{item.text}</h1>
+                    <h2 className='texting'>{item.text}</h2>
                 </div>
             ))}
 
@@ -94,4 +94,4 @@ function RealWedding() {
   )
 }
 
-export default RealWedding
+export default RealWedding;

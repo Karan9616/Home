@@ -1,6 +1,7 @@
 /* Your existing CSS rules */
 .card-container {
     margin-top: 30px;
+    
 }
 
 .card-container h1 {
@@ -18,11 +19,17 @@
     width: 250px;
     height: 300px;
     margin-bottom: 20px;
+    margin-left:50px;
+    
 
 }
 
 
 .custom-card {
-    margin: 0 10px; /* Add horizontal margin between cards */
+    margin: 0 5px; /* Add horizontal margin between cards */
 }
-
+.item-text {
+    font-size: 1.4rem; /* Adjust the font size as needed */
+    font-weight: 300;
+    margin-left:80px;
+}

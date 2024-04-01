@@ -26,4 +26,8 @@
     margin: 0 10px; /* Add horizontal margin between cards */
 }
 
-
+.texting {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    font-weight: 300;
+    margin-left:80px;
+}

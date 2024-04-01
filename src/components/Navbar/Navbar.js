@@ -65,8 +65,8 @@ function Navbar() {
       <div className="nav-links">
         <a href="/" className="nav-link">Home</a>
         <a href="#" className="nav-link">Vendors</a>
-        <a href="#" className="nav-link">About us</a>
-        <a href="#" className="nav-link">Services</a>
+        <a href="#" className="nav-link">Gallery</a>
+        <a href="/contact" className="nav-link">Contact Us</a>
         
          
 
@@ -91,4 +91,4 @@ function Navbar() {
   
 }
 
-export default Navbar
+export default Navbar;

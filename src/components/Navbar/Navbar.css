@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Beau+Rivage&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Beau Rivage");
 .navbar {
-    background-color: #fff; /* Changed background color to white */
+  background: linear-gradient(45deg,#FFE3E3, #FFE3E3); /* Changed background color to white */
     color: #333; /* Changed text color to a dark color */
     display: flex;
     justify-content: space-between;

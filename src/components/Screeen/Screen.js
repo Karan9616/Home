@@ -102,4 +102,4 @@ function Screen() {
   )
 }
 
-export default Screen
+export default Screen;
