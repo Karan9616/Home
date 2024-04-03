@@ -1,17 +1,12 @@
 import React from 'react';
 import './Navbar.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+
+
 
 
 import { styled, alpha } from '@mui/material/styles';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
+
 import InputBase from '@mui/material/InputBase';
-import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 
 const Search = styled('div')(({ theme }) => ({
@@ -64,8 +59,8 @@ function Navbar() {
       <div className="logo">Wedding Planners</div>
       <div className="nav-links">
         <a href="/" className="nav-link">Home</a>
-        <a href="#" className="nav-link">Vendors</a>
-        <a href="#" className="nav-link">Gallery</a>
+        <a href="/vendors" className="nav-link">Vendors</a>
+        <a href="/gallery" className="nav-link">Gallery</a>
         <a href="/contact" className="nav-link">Contact Us</a>
         
          
@@ -82,7 +77,9 @@ function Navbar() {
           </Search>
 
           <div className="spacer" /> {/* Add spacer */}
-        <button className="login-button">Login</button>
+          <button className="login-button">
+               <a href="/login"  class="login-text">Login</a>
+            </button>
       </div>
     </div>
   );

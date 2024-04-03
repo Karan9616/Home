@@ -62,7 +62,7 @@ function RealWedding() {
   return (
     
     <div className='cards-container'>
-    <h1>Real Wedding Stories</h1>
+      <h1>Real Wedding Stories</h1>
   
         <Carousel responsive={responsive}>
             {data.map((item) => (
@@ -81,13 +81,7 @@ function RealWedding() {
 
         </Carousel>
 
-    
-
-
-
-
-
-</div>
+    </div>
 
 
    
