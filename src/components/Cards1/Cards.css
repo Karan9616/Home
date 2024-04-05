@@ -1,4 +1,8 @@
 /* Your existing CSS rules */
+@import url("https://fonts.googleapis.com/css?family=Beau Rivage");
+@import url("https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Beau+Rivage&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Beau+Rivage&family=Inder&display=swap");
+
 .card-container {
     margin-top: 30px;
     
@@ -22,7 +26,27 @@
     margin-left:50px;
     
 
+
 }
+
+.custom-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Ensure overflow is hidden to contain the zoom effect */
+  }
+  
+  .custom-card:hover {
+    transform: translateY(-5px) scale(1); /* Pop up effect on hover and zoom in the image */
+  }
+  
+  .custom-card img {
+    transition: transform 0.3s ease;
+  }
+  
+  .custom-card:hover img {
+    transform: scale(1.1); /* Zoom in the image on hover */
+  }
 
 
 .custom-card {

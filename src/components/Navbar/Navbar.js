@@ -56,6 +56,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 function Navbar() {
   return (
     <div className="navbar">
+    
       <div className="logo">Wedding Planners</div>
       <div className="nav-links">
         <a href="/" className="nav-link">Home</a>
