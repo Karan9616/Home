@@ -4,6 +4,7 @@ import './Navbar.css';
 
 
 
+
 import { styled, alpha } from '@mui/material/styles';
 
 import InputBase from '@mui/material/InputBase';
@@ -56,37 +57,38 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 function Navbar() {
   return (
     <div className="navbar">
-    
+
       <div className="logo">Wedding Planners</div>
       <div className="nav-links">
         <a href="/" className="nav-link">Home</a>
         <a href="/vendors" className="nav-link">Vendors</a>
         <a href="/gallery" className="nav-link">Gallery</a>
         <a href="/contact" className="nav-link">Contact Us</a>
-        
-         
 
-           
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
 
-          <div className="spacer" /> {/* Add spacer */}
-          <button className="login-button">
-               <a href="/login"  class="login-text">Login</a>
-            </button>
+
+
+        <Search>
+          <SearchIconWrapper>
+            <SearchIcon />
+          </SearchIconWrapper>
+          <StyledInputBase
+            placeholder="Search…"
+            inputProps={{ 'aria-label': 'search' }}
+          />
+        </Search>
+
+        <div className="spacer" /> {/* Add spacer */}
+        <button className="login-button">
+          <a href="/login" class="login-text">Login</a>
+        </button>
       </div>
+     
     </div>
   );
 
-    
-  
+
+
 }
 
 export default Navbar;
