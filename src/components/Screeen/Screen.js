@@ -20,7 +20,7 @@ function Screen() {
     <Carousel>
     <Carousel.Item>
       <img
-        style={{ height: '70vh', width: '60vh' }}
+        style={{ height: '80vh', width: '60vh' }}
         className="d-block w-100"
         src='/assests/35.webp'
         alt="First slide"
@@ -32,7 +32,7 @@ function Screen() {
     </Carousel.Item>
     <Carousel.Item>
       <img
-        style={{ height: '70vh', width: '60vh' }}
+        style={{ height: '80vh', width: '60vh' }}
         className="d-block w-100"
         src='/assests/32.jpg'
         alt="First slide"
@@ -44,7 +44,7 @@ function Screen() {
     </Carousel.Item>
     <Carousel.Item>
       <img
-        style={{ height: '70vh', width: '60vh' }}
+        style={{ height: '80vh', width: '60vh' }}
         className="d-block w-100"
         src='/assests/33.webp'
         alt="First slide"
@@ -56,7 +56,7 @@ function Screen() {
     </Carousel.Item>
     <Carousel.Item>
       <img
-        style={{ height: '70vh', width: '60vh' }}
+        style={{ height: '80vh', width: '60vh' }}
         className="d-block w-100"
         src='/assests/37.jpg'
         alt="First slide"
@@ -68,7 +68,7 @@ function Screen() {
     </Carousel.Item>
     <Carousel.Item>
       <img
-        style={{ height: '70vh', width: '60vh' }}
+        style={{ height: '80vh', width: '60vh' }}
         className="d-block w-100"
         src='/assests/31.jpg'
         alt="First slide"
