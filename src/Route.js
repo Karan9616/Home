@@ -5,6 +5,7 @@ import Home from './Home';
 import Login from './Login';
 import Gallery from './Gallery';
 import Vendors from './Vendors';
+import Signup from './Signup';
 
 function Rout() {
     return (
@@ -13,6 +14,7 @@ function Rout() {
                 <Route path='/' element={<Home />} ></Route>
                 <Route path='/contact' element={<Contact />} ></Route>
                 <Route path='/login' element={<Login />} ></Route>
+                <Route path='/signup' element={<Signup />} ></Route>
                 <Route path='/gallery' element={< Gallery/>} ></Route>
                 <Route path='/vendors' element={< Vendors/>} ></Route>
                 

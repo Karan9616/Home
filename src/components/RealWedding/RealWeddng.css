@@ -55,3 +55,25 @@
     transform: scale(1.1); /* Zoom in the image on hover */
   }
   
+/* Media query for max-width: 500px */
+@media (max-width: 500px) {
+  .cards-container {
+      margin-top: 10px; /* Reduce top margin for smaller screens */
+  }
+  
+  .cards-container h1 {
+      font-size: 24px; /* Decrease font size for smaller screens */
+      margin-left: 5px; /* Adjust left margin for smaller screens */
+  }
+
+  .customs-card {
+      width: 80%; /* Adjust card width for smaller screens */
+      margin: 0 auto 20px; /* Center cards and add bottom margin */
+  }
+
+  .texting {
+      font-size: 1.2rem; /* Decrease font size for smaller screens */
+      margin-left: 0; /* Remove left margin for smaller screens */
+      text-align: center; /* Center text for smaller screens */
+  }
+}  

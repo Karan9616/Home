@@ -1,2 +1,16 @@
 
+/* Default styles */
+.carousel-item img {
+    height: 80vh;
+    width: 60vh;
+  }
+  
+  /* Media query for max-width: 500px */
+  @media (max-width: 500px) {
+    .carousel-item img {
+      height: 20vh; /* Adjust height for smaller screens */
+      width: auto; /* Allow width to adjust automatically */
+      max-width: 100%; /* Ensure image doesn't exceed container width */
+    }
+  }
 
