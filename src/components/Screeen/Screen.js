@@ -1,105 +1,93 @@
 import React from 'react';
 import './Screen.css';
-import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
-import { useState } from 'react';
+
+import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+
+
+
+
+
 
 
 
 function Screen() {
-
-  const [vendor, setVendor] = useState('');
-
-  const handleChange1 = (event) => {
-    setVendor(event.target.value);
-  };
-  const [city, setCity] = useState('');
-
-  const handleChange2 = (event) => {
-    setCity(event.target.value);
-  };
-
-
-  let vendor_item = [
-    { name: "Wedding Venue", value: 1 },
-    { name: "Bridal Makeup Artist", value: 2 },
-    { name: "Wedding Photographers", value: 3 },
-    { name: "Wedding Decorators", value: 4 },
-    { name: "Bridal Mehandi Artist", value: 5 },
-    { name: "Wedding Catering", value: 6 },
-    { name: "Wedding Cards", value: 7 },
-    { name: "Wedding Entertainment", value: 8 },
-    { name: "Family Makeup", value: 9 },
-    { name: "Beauty and Wellness", value: 10 }
-
-  ]
-
-  let city_item = [
-    { name: "Banglore", value: 1 },
-    { name: "Mumbai", value: 2 },
-    { name: "Delhi", value: 3 },
-    { name: "Hyderabad", value: 4 },
-    { name: "Chennai", value: 5 },
-    { name: "Kolkata", value: 6 },
-    { name: "Jaipur", value: 7 },
-    { name: "Lucknow", value: 8 },
-    { name: "Khanpur", value: 9 },
-    { name: "Indore", value: 10 }
-
-  ]
-
-
   return (
-    <div className="image-overlay">
-      <img src="/assests/4.jpg" alt="Background" className="background-image" />
-      <div className="overlay-content">
-        <h1 className="title">Let us make your special day unforgettable</h1>
-        <div className="button-container">
-          <Box sx={{ display: 'flex', alignItems: 'center', }}>
-            <Box sx={{ width: '300px', backgroundColor: 'white', borderRadius: '5px' }}>
-              <FormControl fullWidth>
-                <InputLabel id="vendor">Select Vendor Type</InputLabel>
-                <Select
-                  labelId="vendor"
-                  id="vendor"
-                  value={vendor} // Provide the appropriate state value here
-                  label="Age"
-                  onChange={handleChange1}
-                >
-                  {vendor_item.map((item) => {
-                    return <MenuItem value={item.value}>{item.name}</MenuItem>
-                  })}
+
+    <Carousel>
+    <Carousel.Item>
+      <img
+        style={{ height: '80vh', width: '60vh' }}
+        className="d-block w-100"
+        src='/assests/35.webp'
+        alt="First slide"
+      />
+      <Carousel.Caption>
+        <h3>Let us make you Dream wedding come true</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        style={{ height: '80vh', width: '60vh' }}
+        className="d-block w-100"
+        src='/assests/32.jpg'
+        alt="First slide"
+      />
+      <Carousel.Caption>
+        <h3>Let us make you Dream wedding come true</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        style={{ height: '80vh', width: '60vh' }}
+        className="d-block w-100"
+        src='/assests/33.webp'
+        alt="First slide"
+      />
+      <Carousel.Caption>
+        <h3>Plan your Weddding with Us</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        style={{ height: '80vh', width: '60vh' }}
+        className="d-block w-100"
+        src='/assests/37.jpg'
+        alt="First slide"
+      />
+      <Carousel.Caption>
+        <h3>Plan your Best day with Us</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        style={{ height: '80vh', width: '60vh' }}
+        className="d-block w-100"
+        src='/assests/31.jpg'
+        alt="First slide"
+      />
+      <Carousel.Caption>
+        <h3>Dream Wedding Come true here</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+   
+    
+  </Carousel>
+  
 
 
-                </Select>
-              </FormControl>
-            </Box>
-            <Box sx={{ width: '300px', backgroundColor: 'white', borderRadius: '5px' }}>
-              <FormControl fullWidth>
-                <InputLabel id="city">Select City</InputLabel>
-                <Select
-                  labelId="city"
-                  id="city"
-                  value={city} // Provide the appropriate state value here
-                  label="Age"
-                  onChange={handleChange2}
-                >
-                  {city_item.map((item) => {
-                    return <MenuItem value={item.value}>{item.name}</MenuItem>
-                  })}
-
-                </Select>
-              </FormControl>
-            </Box>
-          </Box>
-          <button className='find-button'>Find</button>
-        </div>
-      </div>
-    </div>
   )
+
+
+
 }
 
 export default Screen;

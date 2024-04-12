@@ -54,6 +54,10 @@
     margin-right: 10px; /* Adjust margin as needed */
   }
 
+  .login-text{
+    color:white;
+  }
+
 /* Your existing CSS code */
 
 @media (max-width: 500px) {

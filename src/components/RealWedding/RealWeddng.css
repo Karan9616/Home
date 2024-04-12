@@ -1,4 +1,7 @@
 /* Your existing CSS rules */
+@import url("https://fonts.googleapis.com/css?family=Beau Rivage");
+@import url("https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Beau+Rivage&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Beau+Rivage&family=Inder&display=swap");
 .cards-container {
     margin-top: 30px;
 }
@@ -28,6 +31,49 @@
 
 .texting {
     font-size: 1.5rem; /* Adjust the font size as needed */
-    font-weight: 300;
+    font-weight: 350;
     margin-left:80px;
 }
+
+
+.customs-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Ensure overflow is hidden to contain the zoom effect */
+  }
+  
+  .customs-card:hover {
+    transform: translateY(-5px) scale(1); /* Pop up effect on hover and zoom in the image */
+  }
+  
+  .customs-card img {
+    transition: transform 0.3s ease;
+  }
+  
+  .customs-card:hover img {
+    transform: scale(1.1); /* Zoom in the image on hover */
+  }
+  
+/* Media query for max-width: 500px */
+@media (max-width: 500px) {
+  .cards-container {
+      margin-top: 10px; /* Reduce top margin for smaller screens */
+  }
+  
+  .cards-container h1 {
+      font-size: 24px; /* Decrease font size for smaller screens */
+      margin-left: 5px; /* Adjust left margin for smaller screens */
+  }
+
+  .customs-card {
+      width: 80%; /* Adjust card width for smaller screens */
+      margin: 0 auto 20px; /* Center cards and add bottom margin */
+  }
+
+  .texting {
+      font-size: 1.2rem; /* Decrease font size for smaller screens */
+      margin-left: 0; /* Remove left margin for smaller screens */
+      text-align: center; /* Center text for smaller screens */
+  }
+}  
